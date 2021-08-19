@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão_13 da Lista</title>
+</head>
+<body>
+    <h1>Verifica se um Número é Perfeito</h1>
+    <script>
+        let soma = 0, i, divisores;
+
+        let n = parseInt(prompt("Digite um número: "));
+
+        for(i = 1; i < n; i++){
+    	    if (n % i == 0){
+      		    soma = soma + i;
+  		    }
+  	    }
+  	
+  	    if(n == soma){
+    	    console.log("O numero é perfeito", n);
+  	    } else {
+            console.log("O numero nao é perfeito", n);
+	    }
+  		
+        console.log("A soma é", soma);
+       
+
+    </script>
+</body>
+</html>
